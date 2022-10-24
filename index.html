@@ -1,0 +1,48 @@
+<html>
+  <head>
+    <!-- cdn-fontawesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css"
+    />
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Smythe&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <header class="hero-section">
+      <h1 class="hero-title">Jimmy's Diner</h1>
+      <h3 class="hero-describe">The best burgers and pizza in town</h3>
+    </header>
+    <main>
+      <div id="menu-section">
+        <!-- Display Items here -->
+      </div>
+      <div id="order-section">
+        <!-- Dynamic values here aswell -->
+      </div>
+      <div id="thank-section"></div>
+    </main>
+    <form id="payment-modal" class="payment-modal">
+      <i id="close-modal" class="fa-solid fa-xmark"></i>
+      <h2 class="payment-heading">Enter card details</h2>
+      <input type="text" placeholder="Enter your name" required />
+      <input type="text" placeholder="Enter card number" required />
+      <input type="text" placeholder="Enter CVV" required />
+      <button id="pay" class="pay">Pay</button>
+    </form>
+    <script src="index.js" type="module"></script>
+  </body>
+</html>
